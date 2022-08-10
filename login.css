@@ -1,0 +1,52 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#signinForm {
+    padding-right:60px;
+}
+#welcomeCol {
+    background: rgb(9, 168, 197);
+}
+#imgCol {
+    flex-direction: column;
+}
+.img-fluid {
+    height: 300px;
+    width: 300px;
+    display: block;
+}
+#formCol {
+padding-right: 60px;
+flex-direction: column;
+}
+#colText {
+    margin: auto;
+}
+.col-text {
+    margin: auto;
+    display: block;
+}
+form a {
+    text-decoration: none;
+    font-size: 12px;
+}
+a:hover {
+    text-decoration: none;
+}
+form ::placeholder {
+  font-size:12px;
+}
+.btn.btn-block {
+    border-radius: 5px;
+    background-color:rgb(9, 168, 197);
+    color: white;
+}
+.btn.btn-block:hover {
+    background-color: white;
+    border-color:rgb(9, 168, 197);
+    color: rgb(9, 168, 197);
+}
+
+

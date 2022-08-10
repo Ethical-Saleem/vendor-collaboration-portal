@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="vendor.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+     <script src="https://kit.fontawesome.com/75706b52ac.js" crossorigin="anonymous"></script>
+    <title>Vendor Collaboration Portal</title>
+  </head>
+  
+  <body>
+    <div class="navbar-header">
+    <div class="navbar navbar-expand-sm navbar-dark h-100 py-0" id="firstNav">
+      <!-- Container wrapper -->
+      <div class="container-fluid h-100"> 
+        <div class="container-fluid w-75 px-0">
+          <span class="navbar-brand text-white"><i class="fa-solid fa-house"></i></i></span>
+          <span class="navbar-text title text-white">VENDOR COLLABORATION PORTAL</span>
+          <button class="navbar-toggler text-white ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        </div> 
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse w-50 h-100" id="navbarSupportedContent">
+          <!-- Right links -->
+          <ul class="navbar-nav h-100 w-100 pt-2" id="firstList">
+            <li class="nav-item dropdown text-center mx-lg-1 h-100" id="navItem">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa-solid fa-circle-plus"></i>    
+                </a>
+                <!-- Dropdown menu -->
+                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-center border p-1" aria-labelledby="navbarDropdown" style="width:99%">
+                  <small><li>
+                    <a class="dropdown-item" href="#" type="button" data-bs-toggle="modal" data-bs-target="#navbarModal">
+                      Waybill</a>
+                  </li></small>
+                  <small><li>
+                    <a class="dropdown-item" href="#" type="button" data-bs-toggle="modal" data-bs-target="#navbarModal">
+                      Invoice</a>
+                  </li></small>
+                  <small><li>
+                    <a class="dropdown-item" href="#" type="button" data-bs-toggle="modal" data-bs-target="#navbarModal">
+                      Payment Receipt</a>
+                  </li></small>
+                  <small><li>
+                    <a href="#" class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#navbarModal">
+                      Certificate of <br> Completion</a>
+                  </li></small>
+                  <small><li><a href="addNewUser.html" class="dropdown-item">Add New User</a></li></small>
+                </ul> 
+            </li>
+            <li class="nav-item text-center mx-lg-1" id="navItem">
+                <a class="nav-link text-white" href="notifications.html">
+                <i class="fas fa-bell fa-lg mb-1"></i>
+                </a>
+            </li>
+            <li class="nav-item dropdown text-center mx-lg-1 text-white" id="navItem">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                <i class="fa-solid fa-user"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-center" aria-labelledby="navbarDropdown" style="width:99%;">
+                <li><small><a class="dropdown-item" href="companyProfile.html">Company Profile</a></small></li>
+                <li><small><a class="dropdown-item" href="profile.html">User Profile</a></small></li>
+                <li><small><a class="dropdown-item" href="passwordReset.html">Change Password</a></small></li>
+                <li><small><a class="dropdown-item" href="login.html">Sign Out</a></small></li>
+                </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+    </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="secondNav">
+    <div class="container-fluid p-0">
+    <div class="navbar navbar-expand-sm navbar-info m-0 p-0">
+      <button class="navbar-toggler text-white ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#sideNav"
+          aria-controls="sideNav" aria-expanded="false" aria-label="Toggle side navigation">
+          <i class="fa-solid fa-bars"></i>
+      </button>
+     <!-- <div class="container"> -->
+      <div class="collapse navbar-collapse" id="sideNav">
+        <ul class="navbar-nav w-100 mx-3 justify-content-between" id="sideNav">
+          <li class="nav-item"><a class="nav-link active" href="index.html" id="sideNavLink"><small>DASHBOARD</small></a></li>
+          <li class="nav-item"><a class="nav-link" href="bidInvitation.html" id="sideNavLink"><small>REQUEST FOR QUOTES</small></a></li>
+          <li class="nav-item"><a class="nav-link" href="purchaseOrder.html" id="sideNavLink"><small>PURCHASE ORDER</small></a></li>
+          <li class="nav-item"><a class="nav-link" href="complaint.html" id="sideNavLink"><small>ISSUE RESOLUTION</small></a></li>
+          <li class="nav-item"><a class="nav-link" href="complaint.html" id="sideNavLink"><small>REPORT</small></a></li>
+          <li class="nav-item"><a class="nav-link" href="profile.html" id="sideNavLink"><small>PROFILE</small></a></li>
+        </ul>
+      </div>
+     <!-- </div> -->
+    </div>
+    </div>
+    </div>
+
+    <div class="container-fluid main-content">
+    <div class="container-fluid-sm">
+      <h4 class="fw-bold px-1 mt-1"> Activity Cues</h4>
+      <div class="row px-1">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-8">
+          <div class="row">
+            <div class="col-6 col-sm-4 col-md-3 " id="col">
+              <div class="card" id="cardOne" style="height:103px;">
+                <div class="card-body">
+                <h5 class="card-title"><i class="fa-solid fa-file-pen"></i> 54</h5>
+                <p class="card-text">Quotes</p>
+                <a href="bidInvitation.html" class="stretched-link"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 " id="col">
+              <div class="card" id="cardTwo" style="height:103px;">
+                <div class="card-body">
+                <h5 class="card-title"><i class="fa-solid fa-triangle-exclamation"></i> 54</h5>
+                <p class="card-text">Pending Quotes</p>
+                <a href="bidInvitation.html" class="stretched-link"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 " id="col">
+              <div class="card" id="cardThree" style="height:103px;">
+                <div class="card-body">
+                <h5 class="card-title"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> 54</h5>
+                <p class="card-text">Approved Quotes</p>
+                <a href="bidInvitation.html" class="stretched-link"></a>
+                </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 " id="col">
+              <div class="card" id="cardFour" style="height:103px;">
+                <div class="card-body">
+                <h5 class="card-title"><i class="fa-solid fa-circle-xmark"></i> 54</h5>
+                <p class="card-text">Rejected Quotes</p>
+                <a href="bidInvitation.html" class="stretched-link"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-4 col-md-3 " id="col">
+              <div class="card" id="cardOne" style="height:103px;">
+                <div class="card-body">
+                <h5 class="card-title"><i class="fa-solid fa-folder"></i> 54</h5>
+                <p class="card-text">Purchase Orders</p>
+                <a href="purchaseOrder.html" class="stretched-link"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3" id="col">
+              <div class="card" id="cardTwo" style="height:103px;">
+                <div class="card-body">
+                <h5 class="card-title"><i class="fa-solid fa-folder-open"></i> 54</h5>
+                <p class="card-text">Opened Purchase Orders</p>
+                <a href="purchaseOrder.html" class="stretched-link"></a>
+                </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 " id="col">
+              <div class="card" id="cardThree" style="height:103px;">
+                <div class="card-body">
+                <h5 class="card-title"><i class="fa-solid fa-file-circle-check"></i> 54</h5>
+                <p class="card-text">Accepted Purchase Orders</p>
+                <a href="purchaseOrder.html" class="stretched-link"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 " id="col">
+              <div class="card" id="cardFour" style="height:103px;">
+                <div class="card-body">
+                <h5 class="card-title"><i class="fa-solid fa-file-circle-xmark"></i> 54</h5>
+                <p class="card-text">Closed Purchase Orders</p>
+                <a href="purchaseOrder.html" class="stretched-link"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4 h-100">
+          <div class="card shadow">
+            <div class="card-body">
+            <div class="media d-flex g-0">
+              <div class=" col-sm-1 p-1 text-primary" id="">
+                  <i class="fa-solid fa-message"></i>
+              </div>
+              <div class="media-body col-sm-11">
+                <p class="card-text"><small>vendor portal &nbsp; <strong>.</strong> &nbsp; now</small></p>
+                <h6 class="card-title mt-0 p-0" id="smsHead">New notification</h6>
+                <p class="card-text small" id="smsText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, id repellat. Similique iste,
+                consequatur exercitationem temporibus quia officia ea earum dolores in dellus topret seftoge tesup. Ne lip meto...</p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid-sm">
+      <h4 class="fw-bold">Supplier Compliance Stats</h4>
+      <div class="row justify-content-between p-2 gx-2">
+        <div class="col-6 col-sm-2">
+          <canvas class="chartDoughnut" id="myChart1" width="400" height="500"></canvas>
+        </div>
+
+        <div class="col-6 col-sm-2">
+          <canvas class="chartDoughnut"  id="myChart2"></canvas>
+        </div>
+
+        <div class="col-6 col-sm-2">
+          <canvas class="chartDoughnut"  id="myChart3"></canvas>
+        </div>
+
+        <div class="col-6 col-sm-2">
+          <canvas class="chartDoughnut"  id="myChart4"></canvas>
+        </div>
+
+        <div class="col-6 col-sm-2">
+          <canvas class="chartDoughnut"  id="myChart5"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid-sm">
+      <div class="row my-2">
+        <div class="col-sm-8">
+          <h4 class="mt-2">Recent Activities</h4>
+          <div class=table-responsive>
+            <table class="table activities">
+              <thead>
+                <tr>
+                  <td scope="col">ACTIVITIES</td>
+                  <td scope="col">PURCHASE CODE</td>
+                  <td scope="col">STATUS</td>
+                  <td scope="col">DATE</td>
+                  <td scope="col">BIDDING</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="col">
+                    <p class="service mb-0">Supply of Stationaries</p>
+                    <p class="mb-0 small d-block">Jane Doe</p>
+                  </td>
+                  <td scope="col">Ed12456</td>
+                  <td scope="col">Pending</td>
+                  <td scope="col">04/02/2022</td>
+                  <td scope="col">$2,500</td>
+                </tr>
+                <tr>
+                  <td scope="col">
+                    <p class="service mb-0">Supply of Printers</p>
+                    <p class="mb-0 small d-block">Jane Doe</p>
+                  </td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                </tr>
+                <tr>
+                  <td scope="col">
+                    <p class="service mb-0">Supply of Laptops</p>
+                    <p class="mb-0 small d-block">Jane Doe</p>
+                  </td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-sm-4 pie d-flex justify-content-center align-items-center">
+          <h4 class="mb-4 text-align-center fw-bold">Fill Rate Chart</h4>
+          <div class="chartBox">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Navbar Modal-->
+    <div class="modal" id="navbarModal" tabindex="-1" aria-labelledby="navbar-modal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" style="width:300px;">
+        <div class="modal-content">
+          <div class="modal-body align-items-center justify-content-center text-center">
+            <h5 class="text-center mb-2">Select Purchase Order</h5>
+            <div class="col-sm-6 mx-auto my-3">
+              <form class="align-items-center justify-content-center">
+                <select name="" class="form-control">
+                  <option value="Purchase Order Code" class="">Purchase Order Code</option>
+                  <option value="" class="">PO423547 Supply of Stationaries</option>
+                  <option value="" class="">PO423547 Supply of Printers</option>
+                  <option value="" class="">PO423547 Supply of Laptop</option>
+                </select>
+                <div class="my-3">
+                  <a href="laptopSupplyTwo.html" class="btn btn-sm px-3" id="rgbButton">
+                    Continue
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0"></script>
+    <script>
+      //setup block
+      const data = {
+        labels: ['Color1', 'Color2', 'Color3', 'Color4'],
+        datasets: [{
+          data: [90, 40, 45, 185],
+          backgroundColor: [
+            'rgb(255, 0, 0)',
+            'rgb(140, 29, 162)',
+            'rgb(61, 68, 255)',
+            'rgb(158, 34, 255)'
+          ],
+          borderColor: [
+            'rgb(255, 0, 0)',
+            'rgb(140, 29, 162)',
+            'rgb(61, 68, 255)',
+            'rgb(158, 34, 255)'
+          ], 
+          borderWidth: 1
+        }]
+      };
+
+      //options block
+      const options = {
+        plugins: {
+          legend: {
+            //position: 'right'
+            display: false
+          },
+          tooltip: {
+            enabled: false
+          }
+        },
+        animations: false
+    
+      };
+
+      //config block
+      const config = {
+        type: 'pie',
+        data,
+        options,
+        rotation: 20
+      };
+
+      //render block
+      const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+      );
+
+      //Doughnut1
+      const dataNut1 = {
+        labels: ['Color1', 'Color2', 'Color3', 'Color4'],
+        datasets: [{
+          data: [90, 270],
+          backgroundColor: [
+            'rgb(91, 211, 102)',
+            'rgb(207, 216, 220)'
+          ],
+          borderColor: [
+            'rgb(91, 211, 102)',
+            'rgb(207, 216, 220)'
+          ], 
+          borderWidth: 1,
+          cutout: '80%'
+        }]
+      };
+      const stackedTextNut1 = {
+        id: 'stackedTextNut1',
+        afterDatasetsDraw(chart, args, options) {
+          const {ctx, data, chartArea: {width, height}} = chart;
+          
+          console.log(data.datasets[0].data[0])
+
+          ctx.save();
+          const fontHeight= 35;
+          const fontHeight2 = fontHeight / 2; 
+          ctx.font = `bolder ${fontHeight}px Arial`;
+          ctx.fillStyle = 'rgb(40, 42, 41)';
+          ctx.textAlign = 'center';
+          ctx.fillText(data.datasets[0].data[0] +'%', width / 2, height / 2);
+          ctx.restore();
+
+          ctx.font = ` ${fontHeight2}px Arial`;
+          ctx.fillStyle = 'rgb(67, 67, 67)';
+          ctx.textAlign = 'center';
+          ctx.fillText('SUPPLIERS', width / 2, height / 2 + fontHeight);
+          ctx.restore(); 
+        }
+      }
+      //config block
+      const configNut1 = {
+        type: 'doughnut',
+        data: dataNut1,
+        options,
+        plugins: [stackedTextNut1]
+      };
+      const myChart1 = new Chart(
+        document.getElementById('myChart1'),
+        configNut1
+      );
+
+      //Doughnut2
+      const dataNut2 = {
+        labels: ['Color1', 'Color2', 'Color3', 'Color4'],
+        datasets: [{
+          data: [270, 90],
+          backgroundColor: [
+            'rgb(234, 61, 47)',
+            'rgb(207, 216, 220)'
+          ],
+          borderColor: [
+            'rgb(255, 0, 0)',
+            'rgb(207, 216, 220)'
+          ], 
+          borderWidth: 1,
+          cutout: '80%'
+        }]
+      };
+      const stackedTextNut2 = {
+        id: 'stackedTextNut2',
+        afterDatasetsDraw(chart, args, options) {
+          const {ctx, data, chartArea: {top, bottom, left, right, width, height}} = chart;
+          
+          console.log(data.datasets[0].data[0])
+
+          ctx.save();
+          const fontHeight= 35;
+          const fontHeight2 = fontHeight / 2; 
+          ctx.font = `bolder ${fontHeight}px Arial`;
+          ctx.fillStyle = 'rgb(40, 42, 41)';
+          ctx.textAlign = 'center';
+          ctx.fillText(data.datasets[0].data[0] +'%', width / 2, height / 2);
+          ctx.restore();
+
+          ctx.font = ` ${fontHeight2}px Arial`;
+          ctx.fillStyle = 'rgb(67, 67, 67)';
+          ctx.textAlign = 'center';
+          ctx.fillText('UNLISTED', width / 2, height / 2 + fontHeight);
+          ctx.restore(); 
+        }
+      }
+      //config block
+      const configNut2 = {
+        type: 'doughnut',
+        data: dataNut2,
+        options,
+        plugins: [stackedTextNut2]
+      };
+      const myChart2 = new Chart(
+        document.getElementById('myChart2'),
+        configNut2
+      );
+
+      //Doughnut3
+      const dataNut3 = {
+        labels: ['Color1', 'Color2', 'Color3', 'Color4'],
+        datasets: [{
+          data: [180, 180],
+          backgroundColor: [
+            'rgb(249, 168, 38)',
+            'rgb(207, 216, 220)'
+          ],
+          borderColor: [
+            'rgb(249, 168, 38)',
+            'rgb(207, 216, 220)'
+          ], 
+          borderWidth: 1,
+          cutout: '80%'
+        }]
+      };
+      const stackedTextNut3 = {
+        id: 'stackedTextNut3',
+        afterDatasetsDraw(chart, args, options) {
+          const {ctx, data, chartArea: {top, bottom, left, right, width, height}} = chart;
+          
+          console.log(data.datasets[0].data[0])
+
+          ctx.save();
+          const fontHeight= 35;
+          const fontHeight2 = fontHeight / 2; 
+          ctx.font = `bolder ${fontHeight}px Arial`;
+          ctx.fillStyle = 'rgb(40, 42, 41)';
+          ctx.textAlign = 'center';
+          ctx.fillText(data.datasets[0].data[0] +'%', width / 2, height / 2);
+          ctx.restore();
+
+          ctx.font = ` ${fontHeight2}px Arial`;
+          ctx.fillStyle = 'rgb(67, 67, 67)';
+          ctx.textAlign = 'center';
+          ctx.fillText('CONTRACTED', width / 2, height / 2 + fontHeight);
+          ctx.restore(); 
+        }
+      }
+      //config block
+      const configNut3 = {
+        type: 'doughnut',
+        data: dataNut3,
+        options,
+        plugins: [stackedTextNut3]
+      };
+      const myChart3 = new Chart(
+        document.getElementById('myChart3'),
+        configNut3
+      );
+
+      //Doughnut4
+      const dataNut4 = {
+        labels: ['Color1', 'Color2', 'Color3', 'Color4'],
+        datasets: [{
+          data: [225, 135],
+          backgroundColor: [
+            'rgb(21, 101, 216)',
+            'rgb(207, 216, 220)'
+          ],
+          borderColor: [
+            'rgb(21, 101, 216)',
+            'rgb(207, 216, 220)'
+          ], 
+          borderWidth: 1,
+          cutout: '80%'
+        }]
+      };
+      const stackedTextNut4 = {
+        id: 'stackedTextNut4',
+        afterDatasetsDraw(chart, args, options) {
+          const {ctx, data, chartArea: {top, bottom, left, right, width, height}} = chart;
+          
+          console.log(data.datasets[0].data[0])
+
+          ctx.save();
+          const fontHeight= 35;
+          const fontHeight2 = fontHeight / 2; 
+          ctx.font = `bolder ${fontHeight}px Arial`;
+          ctx.fillStyle = 'rgb(40, 42, 41)';
+          ctx.textAlign = 'center';
+          ctx.fillText(data.datasets[0].data[0] +'%', width / 2, height / 2);
+          ctx.restore();
+
+          ctx.font = ` ${fontHeight2}px Arial`;
+          ctx.fillStyle = 'rgb(67, 67, 67)';
+          ctx.textAlign = 'center';
+          ctx.fillText('CONTRACTED', width / 2, height / 2 + fontHeight);
+          ctx.restore(); 
+        }
+      }
+      //config block
+      const configNut4 = {
+        type: 'doughnut',
+        data: dataNut4,
+        options,
+        plugins: [stackedTextNut4]
+      };
+      const myChart4 = new Chart(
+        document.getElementById('myChart4'),
+        configNut4
+      );
+
+      //Doughnut5
+      const dataNut5 = {
+        labels: ['Color1', 'Color2', 'Color3', 'Color4'],
+        datasets: [{
+          data: [135, 225],
+          backgroundColor: [
+            'rgb(139, 29, 162)',
+            'rgb(207, 216, 220)'
+          ],
+          borderColor: [
+            'rgb(139, 29, 162)',
+            'rgb(207, 216, 220)'
+          ], 
+          borderWidth: 1,
+          cutout: '80%'
+        }]
+      };
+      const stackedTextNut5 = {
+        id: 'stackedTextNut5',
+        afterDatasetsDraw(chart, args, options) {
+          const {ctx, data, chartArea: {top, bottom, left, right, width, height}} = chart;
+          
+          console.log(data.datasets[0].data[0])
+
+          ctx.save();
+          const fontHeight= 35;
+          const fontHeight2 = fontHeight / 2; 
+          ctx.font = `bolder ${fontHeight}px Arial`;
+          ctx.fillStyle = 'rgb(40, 42, 41)';
+          ctx.textAlign = 'center';
+          ctx.fillText(data.datasets[0].data[0] +'%', width / 2, height / 2);
+          ctx.restore();
+
+          ctx.font = ` ${fontHeight2}px Arial`;
+          ctx.fillStyle = 'rgb(67, 67, 67)';
+          ctx.textAlign = 'center';
+          ctx.fillText('CONTRACTED', width / 2, height / 2 + fontHeight);
+          ctx.restore(); 
+        }
+      }
+      //config block
+      const configNut5 = {
+        type: 'doughnut',
+        data: dataNut5,
+        options,
+        plugins: [stackedTextNut5]
+      };
+      const myChart5 = new Chart(
+        document.getElementById('myChart5'),
+        configNut5
+      );
+    </script>
+  </body>  
+</html>

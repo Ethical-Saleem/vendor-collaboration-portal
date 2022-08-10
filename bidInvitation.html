@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="vendor.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+     <script src="https://kit.fontawesome.com/75706b52ac.js" crossorigin="anonymous"></script>
+    <title>Request for Quotes</title>
+  </head>
+
+  <body>
+    <div class="navbar-header">
+      <div class="navbar navbar-expand-sm navbar-dark h-100 py-0" id="firstNav">
+        <!-- Container wrapper -->
+        <div class="container-fluid h-100"> 
+          <div class="container-fluid w-75 px-0">
+            <span class="navbar-brand text-white"><i class="fa-solid fa-house"></i></i></span>
+            <span class="navbar-text title text-white">VENDOR COLLABORATION PORTAL</span>
+            <button class="navbar-toggler text-white ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          </div> 
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse w-50 h-100" id="navbarSupportedContent">
+            <!-- Right links -->
+            <ul class="navbar-nav h-100 w-100 pt-2" id="firstList">
+              <li class="nav-item dropdown text-center mx-lg-1 h-100" id="navItem">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="fa-solid fa-circle-plus"></i>    
+                  </a>
+                  <!-- Dropdown menu -->
+                  <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-center border p-1" aria-labelledby="navbarDropdown" style="width:99%">
+                    <small><li>
+                      <a class="dropdown-item" href="#" type="button" data-bs-toggle="modal" data-bs-target="#navbarModal">
+                        Waybill</a>
+                    </li></small>
+                    <small><li>
+                      <a class="dropdown-item" href="#" type="button" data-bs-toggle="modal" data-bs-target="#navbarModal">
+                        Invoice</a>
+                    </li></small>
+                    <small><li>
+                      <a class="dropdown-item" href="#" type="button" data-bs-toggle="modal" data-bs-target="#navbarModal">
+                        Payment Receipt</a>
+                    </li></small>
+                    <small><li>
+                      <a href="#" class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#navbarModal">
+                        Certificate of Completion</a>
+                    </li></small>
+                    <small><li><a href="addNewUser.html" class="dropdown-item">Add New User</a></li></small>
+                  </ul> 
+              </li>
+              <li class="nav-item text-center mx-lg-1" id="navItem">
+                  <a class="nav-link text-white" href="notifications.html">
+                  <i class="fas fa-bell fa-lg mb-1"></i>
+                  </a>
+              </li>
+              <li class="nav-item dropdown text-center mx-lg-1 text-white" id="navItem">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                  <i class="fa-solid fa-user"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-center" aria-labelledby="navbarDropdown" style="width:99%;">
+                  <li><small><a class="dropdown-item" href="companyProfile.html">Company Profile</a></small></li>
+                  <li><small><a class="dropdown-item" href="profile.html">User Profile</a></small></li>
+                  <li><small><a class="dropdown-item" href="passwordReset.html">Change Password</a></small></li>
+                  <li><small><a class="dropdown-item" href="login.html">Sign Out</a></small></li>
+                  </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+      </div>
+    </div>
+  
+      <!-- Navbar -->
+    <div class="secondNav">
+    <div class="container-fluid p-0">
+    <div class="navbar navbar-expand-sm navbar-info m-0 p-0">
+      <button class="navbar-toggler text-white ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#sideNav"
+          aria-controls="sideNav" aria-expanded="false" aria-label="Toggle side navigation">
+          <i class="fa-solid fa-bars"></i>
+      </button>
+      <!-- <div class="container"> -->
+      <div class="collapse navbar-collapse" id="sideNav">
+        <ul class="navbar-nav w-100 mx-3 justify-content-between" id="sideNav">
+          <li class="nav-item"><a class="nav-link" href="index.html" id="sideNavLink"><small>DASHBOARD</small></a></li>
+          <li class="nav-item"><a class="nav-link active" href="bidInvitation.html" id="sideNavLink"><small>REQUEST FOR QUOTES</small></a></li>
+          <li class="nav-item"><a class="nav-link" href="purchaseOrder.html" id="sideNavLink"><small>PURCHASE ORDER</small></a></li>
+          <li class="nav-item"><a class="nav-link" href="complaint.html" id="sideNavLink"><small>ISSUE RESOLUTION</small></a></li>
+          <li class="nav-item"><a class="nav-link" href="complaint.html" id="sideNavLink"><small>REPORT</small></a></li>
+          <li class="nav-item"><a class="nav-link" href="profile.html" id="sideNavLink"><small>PROFILE</small></a></li>
+        </ul>
+      </div>
+      <!-- </div> -->
+    </div>
+    </div>
+    </div>
+
+    <div class="container-fluid main-content px-0">
+    <div class="d-flex navbar-secondary" id="bidNav">
+      <div class="mx-4 my-3 py-1">
+        <h6 class="navbar-text text-dark fw-bold">Bid Invitation</h6>
+      </div>
+    </div>
+
+    <div class="container-fluid d-sm-flex">
+      <div class="col-sm-2 h-100 my-3">
+        <div class="card" id="bidNav">
+        <div class="row pt-2">
+         <div class="card my-2 w-75 mx-auto" id="rgbCard">
+           <div class="card-body">
+              <h5 class="card-title">Accepted</h5>
+              <p class="card-text">25</p>
+           </div>
+         </div>
+        </div>
+
+        <div class="row my-2 pt-2">
+          <div class="card w-75 mx-auto" id="rgbCard">
+            <div class="card-body">
+                <h5 class="card-title">Rejected</h5>
+                <p class="card-text">10</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-2 pt-3">
+          <div class="card w-75 mx-auto" id="rgbCard">
+            <div class="card-body">
+                <h5 class="card-title">Pending</h5>
+                <p class="card-text">5</p>
+            </div>
+          </div>
+        </div>
+        <form action="" class="">
+        <div class="row mx-3 px-1 my-2">
+          <label for="status" class="fw-bold">Status</label>
+          <select name="status" class="form-select">
+            <option selected >Any</option>
+            <option value="accepted">Accepted</option>
+            <option value="rejected">Rejected</option>
+            <option value="submitted">Submitted</option>
+            <option value="pending">Pending</option>
+          </select>
+        </div>
+        <div class="row mx-3 px-1 my-2">
+          <label for="dataRange" class="fw-bold">Data Range</label>
+          <select name="dataRange" class="form-select">
+            <option selected >Any</option>
+            <option value="accepted">Any</option>
+            <option value="rejected">Today</option>
+            <option value="submitted">Yesterday</option>
+            <option value="pending">7 days ago</option>
+            <option value="last-month">Last month</option>
+          </select>
+        </div>
+        <div class="row mx-3 px-1 my-2">
+          <label for="bidValue" class="fw-bold">Bid Value</label>
+          <select name="bidValue" class="form-select">
+            <option selected >Any</option>
+            <option value="accepted">&#8358;100,000 - &#8358;499,999</option>
+            <option value="rejected">&#8358;500,000 - &#8358;999,999</option>
+            <option value="submitted">&#8358;1,000,000 - &#8358;1,999,999</option>
+          </select>
+        </div>
+
+        <div class="float-end mx-3 px-1">
+            <button class="btn my-4" id="rgbButton">Apply</button>
+        </div>
+        </form>
+        </div> 
+      </div>
+
+      
+      <div class="col-sm-10 my-2">
+        <div class="container"> 
+            <table class="table table-sm border my-2 mx-2" id="bidTable">
+              <thead>
+                <tr>
+                  <td scope="col">
+                    <label class="control control-checkbox">
+                      <input type="checkbox" class="check-all">
+                      <div class="control-indicator"></div>
+                    </label>
+                  </td>
+                  <td scope="col" class="table-active">BID NO</td>
+                  <td scope="col" class="table-active">DOCUMENT TITLE</td>
+                  <td scope="col" class="table-active">EXPIRATION DATE & TIME</td>
+                  <td scope="col" class="table-active">STATUS</td>
+                  <td scope="col" class="table-active">BID VALUE</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="col">
+                    <label class="control control-checkbox">
+                      <input type="checkbox">
+                      <div class="control-indicator"></div>
+                    </label>
+                  </td>
+                  <td scope="col">
+                    SD1546
+                  </td>
+                  <td scope="col">
+                    <a href="invitationDetails1.html" class="">Supply of Stationaries</a>
+                  </td>
+                  <td scope="col">2022-01-28 14:53 GMT</td>
+                  <td scope="col">Accepted</td>
+                  <td scope="col">&#8358;34595</td>
+                </tr>
+                <tr>
+                  <td scope="col">
+                    <label class="control control-checkbox">
+                      <input type="checkbox">
+                      <div class="control-indicator"></div>
+                    </label>
+                  </td>
+                  <td scope="col">SD1546</td>
+                  <td scope="col">Supply of Printers</td>
+                  <td scope="col">2022-01-28 14:53 GMT</td>
+                  <td scope="col">Accepted</td>
+                  <td scope="col"></td>
+                </tr>
+                <tr>
+                  <td scope="col">
+                    <label class="control control-checkbox">
+                      <input type="checkbox">
+                      <div class="control-indicator"></div>
+                    </label>
+                  </td>
+                  <td scope="col">SD1546</td>
+                  <td scope="col">Supply of Laptops</td>
+                  <td scope="col">2022-01-28 14:53 GMT</td>
+                  <td scope="col">Accepted</td>
+                  <td scope="col"></td>
+                </tr>
+                <tr>
+                  <td scope="col">
+                    <label class="control control-checkbox">
+                      <input type="checkbox">
+                      <div class="control-indicator"></div>
+                    </label>
+                  </td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                </tr>
+
+                <tr>
+                  <td scope="col">
+                    <label class="control control-checkbox">
+                      <input type="checkbox">
+                      <div class="control-indicator"></div>
+                    </label>
+                    <label class="control control-checkbox d-block">
+                      <input type="checkbox">
+                      <div class="control-indicator"></div>
+                    </label>
+                  </td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                </tr>
+
+                <tr>
+                  <td scope="col">
+                    <label class="control control-checkbox">
+                      <input type="checkbox">
+                      <div class="control-indicator"></div>
+                    </label>
+                  </td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                </tr>
+                <tr>
+                  <td scope="col">
+                    <label class="control control-checkbox">
+                      <input type="checkbox">
+                      <div class="control-indicator"></div>
+                    </label>
+                  </td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                </tr>
+
+                <tr>
+                  <td scope="col">
+                    <label class="control control-checkbox">
+                      <input type="checkbox">
+                      <div class="control-indicator"></div>
+                    </label>
+                    <label class="control control-checkbox d-block">
+                      <input type="checkbox">
+                      <div class="control-indicator"></div>
+                    </label>
+                  </td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                </tr>
+
+                <tr>
+                  <td scope="col">
+                    <label class="control control-checkbox">
+                      <input type="checkbox">
+                      <div class="control-indicator"></div>
+                    </label>
+                  </td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                </tr>
+                <tr>
+                  <td scope="col">
+                    <label class="control control-checkbox">
+                      <input type="checkbox">
+                      <div class="control-indicator"></div>
+                    </label>
+                  </td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                </tr>
+
+                <tr>
+                  <td scope="col">
+                    <label class="control control-checkbox">
+                      <input type="checkbox">
+                      <div class="control-indicator"></div>
+                    </label>
+                    <label class="control control-checkbox d-block">
+                      <input type="checkbox">
+                      <div class="control-indicator"></div>
+                    </label>
+                  </td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                </tr>
+
+                <tr>
+                  <td scope="col">
+                    <label class="control control-checkbox">
+                      <input type="checkbox">
+                      <div class="control-indicator"></div>
+                    </label>
+                  </td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                </tr>
+                <tr>
+                  <td scope="col">
+                    <label class="control control-checkbox">
+                      <input type="checkbox">
+                      <div class="control-indicator"></div>
+                    </label>
+                  </td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                </tr>
+
+                <tr>
+                  <td scope="col">
+                    <label class="control control-checkbox">
+                      <input type="checkbox">
+                      <div class="control-indicator"></div>
+                    </label>
+                  </td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                </tr>
+
+              </tbody>
+            </table>
+        </div>
+      </div>
+
+      <!-- Navbar Modal-->
+      <div class="modal" id="navbarModal" tabindex="-1" aria-labelledby="navbar-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="width:300px;">
+          <div class="modal-content">
+            <div class="modal-body align-items-center justify-content-center text-center">
+              <h5 class="text-center mb-2">Select Purchase Order</h5>
+              <div class="col-sm-6 mx-auto my-3">
+                <form class="align-items-center justify-content-center">
+                  <select name="" class="form-control">
+                    <option value="Purchase Order Code" class="">Purchase Order Code</option>
+                    <option value="" class="">PO423547 Supply of Stationaries</option>
+                    <option value="" class="">PO423547 Supply of Printers</option>
+                    <option value="" class="">PO423547 Supply of Laptop</option>
+                  </select>
+                  <div class="my-3">
+                    <a href="laptopSupplyTwo.html" class="btn btn-sm px-3" id="rgbButton">
+                      Continue
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="vendor.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+     <script src="https://kit.fontawesome.com/75706b52ac.js" crossorigin="anonymous"></script>
+    <title>Invoice-for-laptops</title>
+  </head>
+  
+  <body>
+    <div class="navbar-header">
+      <div class="navbar navbar-expand-sm navbar-dark h-100 py-0" id="firstNav">
+        <!-- Container wrapper -->
+        <div class="container-fluid h-100"> 
+          <div class="container-fluid w-75 px-0">
+            <span class="navbar-brand text-white"><i class="fa-solid fa-house"></i></i></span>
+            <span class="navbar-text title text-white">VENDOR COLLABORATION PORTAL</span>
+            <button class="navbar-toggler text-white ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          </div> 
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse w-50 h-100" id="navbarSupportedContent">
+            <!-- Right links -->
+            <ul class="navbar-nav h-100 w-100 pt-2" id="firstList">
+              <li class="nav-item dropdown text-center mx-lg-1 h-100" id="navItem">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="fa-solid fa-circle-plus"></i>    
+                  </a>
+                  <!-- Dropdown menu -->
+                  <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-center border p-1" aria-labelledby="navbarDropdown" style="width:99%">
+                    <small><li>
+                      <a class="dropdown-item" href="#" type="button" data-bs-toggle="modal" data-bs-target="#navbarModal">
+                        Waybill</a>
+                    </li></small>
+                    <small><li>
+                      <a class="dropdown-item" href="#" type="button" data-bs-toggle="modal" data-bs-target="#navbarModal">
+                        Invoice</a>
+                    </li></small>
+                    <small><li>
+                      <a class="dropdown-item" href="#" type="button" data-bs-toggle="modal" data-bs-target="#navbarModal">
+                        Payment Receipt</a>
+                    </li></small>
+                    <small><li>
+                      <a href="#" class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#navbarModal">
+                        Certificate of Completion</a>
+                    </li></small>
+                    <small><li><a href="addNewUser.html" class="dropdown-item">Add New User</a></li></small>
+                  </ul> 
+              </li>
+              <li class="nav-item text-center mx-lg-1" id="navItem">
+                  <a class="nav-link text-white" href="notifications.html">
+                  <i class="fas fa-bell fa-lg mb-1"></i>
+                  </a>
+              </li>
+              <li class="nav-item dropdown text-center mx-lg-1 text-white" id="navItem">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                  <i class="fa-solid fa-user"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-center" aria-labelledby="navbarDropdown" style="width:99%;">
+                  <li><small><a class="dropdown-item" href="companyProfile.html">Company Profile</a></small></li>
+                  <li><small><a class="dropdown-item" href="profile.html">User Profile</a></small></li>
+                  <li><small><a class="dropdown-item" href="passwordReset.html">Change Password</a></small></li>
+                  <li><small><a class="dropdown-item" href="login.html">Sign Out</a></small></li>
+                  </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+      </div>
+    </div>
+  
+      <!-- Navbar -->
+    <div class="secondNav">
+    <div class="container-fluid p-0">
+    <div class="navbar navbar-expand-sm navbar-info m-0 p-0">
+      <button class="navbar-toggler text-white ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#sideNav"
+          aria-controls="sideNav" aria-expanded="false" aria-label="Toggle side navigation">
+          <i class="fa-solid fa-bars"></i>
+      </button>
+      <!-- <div class="container"> -->
+      <div class="collapse navbar-collapse" id="sideNav">
+        <ul class="navbar-nav w-100 mx-3 justify-content-between" id="sideNav">
+          <li class="nav-item"><a class="nav-link" href="index.html" id="sideNavLink"><small>DASHBOARD</small></a></li>
+          <li class="nav-item"><a class="nav-link" href="bidInvitation.html" id="sideNavLink"><small>REQUEST FOR QUOTES</small></a></li>
+          <li class="nav-item"><a class="nav-link active" href="purchaseOrder.html" id="sideNavLink"><small>PURCHASE ORDER</small></a></li>
+          <li class="nav-item"><a class="nav-link" href="complaint.html" id="sideNavLink"><small>ISSUE RESOLUTION</small></a></li>
+          <li class="nav-item"><a class="nav-link" href="complaint.html" id="sideNavLink"><small>REPORT</small></a></li>
+          <li class="nav-item"><a class="nav-link" href="profile.html" id="sideNavLink"><small>PROFILE</small></a></li>
+        </ul>
+      </div>
+      <!-- </div> -->
+    </div>
+    </div>
+    </div>
+
+    <div class="container-fluid main-content px-0">
+      <div class="d-flex navbar-secondary" id="bidNav">
+        <div class="mx-4 my-3 py-1">
+          <h6 class="navbar-text text-dark fw-bold">PO2201001 Supply of Laptops</h6>
+        </div>
+        <div class="ms-auto mx-2 my-3">
+        <button class="btn btn-sm shadow m-2" type="button" id="rgbButton"
+         data-bs-toggle="modal" data-bs-target="#successModal">Accept</button>
+        <button class="btn btn-sm shadow m-2" type="button" id="whiteButton">Reject</button>
+        <button class="btn btn-sm shadow m-2" type="button" id="rgbButton">
+          <i class="fa-solid fa-print"></i>
+        </button>
+        <button class="btn btn-sm shadow m-2" type="button" id="rgbButton">
+          <i class="material-icons">download</i>
+        </button>
+        </div> 
+      </div>
+
+      <div class="container-fluid d-flex mb-5">
+        <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
+          <div class="col-sm-12 col-lg-12 col-xl-12">
+              <div class="text-end">
+                  <p class="fw-bold my-0">Status: <span class="small fw-normal">Accepted</span></p>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="card" id="invoiceCard">
+                    <div class="card-body">
+                      <div class="invoice-title">
+                          <h4 class="text-center fs-5 fw-bold">PURCHASE ORDER</h4>
+                      </div>
+                      <div class="row justify-content-between">
+                        <div class="col-6">
+                          <address>
+                              <p class="mb-0">&lt;Company Name&gt;</p>
+                              <p class="mb-0">&lt;Street Address&gt;</p>
+                              <p class="mb-0">&lt;City&gt;, &lt;State&gt; &lt;Zip&gt;</p>
+                          </address>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                          <div class="d-flex justify-content-between">
+                              <p class="mb-0">PO Number:</p>
+                              <span class="">&lt;12345&gt;</span>
+                          </div>
+                          <div class="d-flex justify-content-between">
+                              <p class="mb-0">PO Date:</p>
+                              <span class="">&lt;7/15/2009&gt;</span>
+                          </div>
+                          <div class="d-flex justify-content-between">
+                              <p class="mb-0">Vendor ID:</p>
+                              <span class="">&lt;Vendor ID&gt;</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card text-dark">
+                        <div class="d-flex col-12" id="purchaseID">
+                          <div class="col-6">
+                            <p class="fw-bold mb-0 mx-2">Purchase From</p>
+                          </div>
+                          <div class="col-6">
+                              <p class="fw-bold mb-0">Ship To:</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="container d-flex mx-5">
+                            <div class="col-6">
+                              <address>
+                                <p class="mb-0 detail">&lt;Vendor Name&gt;</p>
+                                <p class="mb-0 detail">&lt;Vendor Street Address&gt;</p>
+                                <p class="mb-0 detail">&lt;City&gt;, &lt;State&gt; &lt;Zip&gt;</p>
+                              </address>
+                            </div>
+                            <div class="col-6">
+                              <address>
+                                <p class="mb-0 detail">&lt;Company Name&gt;</p>
+                                <p class="mb-0 detail">&lt;Company Street Address&gt;</p>
+                                <p class="mb-0 detail">&lt;City&gt;, &lt;State&gt; &lt;Zip&gt;</p>
+                              </address>
+                            </div>
+                          </div>
+                          <div class="container d-flex mx-5">
+                            <div class="col-6">
+                              <address>
+                                <p class="fw-bold mb-0 detail">Contact Name:</p>
+                                <p class="mb-0 detail">&lt;Name&gt;</p>
+                              </address>
+                            </div>
+                            <div class="col-6">
+                              <address>
+                                <p class="fw-bold mb-0 detail">Conatct Name:</p>
+                                <p class="mb-0 detail">&lt;Name&gt;</p>
+                              </address>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex col-12" id="purchaseID">
+                          <div class="col-4 text-center">
+                            <p class="fw-bold mb-0 mx-2">Shipping Method</p>
+                          </div>
+                          <div class="col-3 text-center">
+                            <p class="fw-bold mb-0">Payment Terms</p>
+                          </div>
+                          <div class="col-4 text-center">
+                            <p class="fw-bold mb-0">Required By Date</p>
+                          </div>
+                        </div>
+                        <div class="d-flex col-12">
+                          <div class="col-4 text-center">
+                            <p class="detail mb-0 mx-2">&lt;UPS&gt;</p>
+                          </div>
+                          <div class="col-3 text-center border-start">
+                            <p class="detail mb-0">&lt;Net 30 Days&gt;</p>
+                          </div>
+                          <div class="col-4 text-center border-start">
+                            <p class="detail mb-0">&lt;Date&gt;</p>
+                          </div>
+                        </div>
+                        <div class="d-flex col-12" id="purchaseID">
+                          <div class="col-7 d-flex">
+                            <div class="col-7">
+                              <p class="fw-bold mb-0 mx-2">Item Description</p>
+                            </div>
+                            <div class="col-5 text-center">
+                              <p class="fw-bold mb-0">Quantity</p>
+                            </div>
+                          </div>
+                          <div class="col-5 d-flex">
+                            <div class="col-6 text-center">
+                              <p class="fw-bold mb-0">Unit Price</p>
+                            </div>
+                            <div class="col-6 text-center">
+                              <p class="fw-bold mb-0">Amount</p>
+                            </div>
+                          </div>
+                          <!--<Table
+                          :fields="fields"
+                          :tableData="tableData"
+                          :classObject="classObject"
+                              />-->
+                        </div>
+                        <div class="d-flex col-12 border-bottom">
+                          <div class="col-7 d-flex">
+                            <div class="col-7">
+                              <div class="container m-4">
+                                <ul class="list-unstyled">
+                                  <li class="detail">&lt;Item 1&gt;</li>
+                                  <li class="detail">&lt;Item 2&gt;</li>
+                                  <li class="detail">&lt;Item 3&gt;</li>
+                                  <li class="detail">&lt;Item 4&gt;</li>
+                                  <li class="detail">&lt;Item 5&gt;</li>
+                                  <li class="detail">&lt;Item 6&gt;</li>
+                                  <li class="detail">&lt;Item 7&gt;</li>
+                                  <li class="detail">&lt;Item 8&gt;</li>
+                                  <li class="detail">&lt;Item 9&gt;</li>
+                                  <li class="detail">&lt;Item 10&gt;</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-5 border-start text-center">
+                              <p class="mb-0"></p>
+                            </div>
+                          </div>
+                          <div class="col-5 d-flex">
+                            <div class="col-6 border-start text-center">
+                              <p class="mb-0"></p>
+                            </div>
+                            <div class="col-6 border-start text-center">
+                              <p class="mb-0"></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="container d-flex mt-3 justify-content-between">
+                            <div class="col-6 mx-3">
+                              <p class="fw-bold">Approved By:</p>
+                              <div class="d-flex mt-2">
+                                <span class="fw-bold mt-1">&times;</span>
+                                <hr>
+                              </div>
+                            </div>
+                            <div class="col-6 col-lg-6 d-flex mx-2">
+                            <div class="col-6 text-end">
+                              <p class="mb-0">Subtotal:</p>
+                              <p class="mb-0">Freight:</p>
+                              <p class="mb-0">Sales Tax:</p>
+                            </div>
+                            <div class="col-6 text-start mx-2">
+                              <p class="mb-0">$</p>
+                              <p class="mb-0"></p>
+                              <p class="mb-0"></p>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="">
+                          <div class="col-6 d-flex ms-auto mx-2">
+                            <div class="col-6 text-end mx-5">
+                              <p class="fw-bold mb-0">Order Total:</p>
+                            </div>
+                          <div class="col-6 mx-2">
+                            <p class="mb-0"></p>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-xl-3">
+          <p class="fw-bold mb-0 mx-4">Comment</p>
+          <div class="action">
+            <textarea name="" class="text-area" cols="37" style="height:400px;"></textarea>
+            <div class="w-100 my-3">
+              <button class="btn btn-block w-100 text-white"
+              style="background-color:#04ba16;">
+                Save Comment
+              </button>
+              <button class="btn btn-block w-100 my-2 text-white"
+              style="background-color:#ea3d2f;">
+                Delete Comment
+              </button>
+              <button class="btn btn-block w-100 text-white"
+              data-bs-toggle="modal" data-bs-target="#commentsModal"
+              style="background-color:#1565d8;">
+                View Comment <span><i class="fa-solid fa-chevron-right"></i></span>
+              </button>
+            </div>
+          </div>
+          <div class="files">
+            <div class="card upload-card">
+              <div class="card-body">
+                <p class="list-title">
+                  <i class="fa-solid fa-cloud-arrow-up"></i>
+                  <span class="">Files</span>
+                </p>
+                <div class="upload-area mb-2 mt-4">
+                  <div class="float-end">
+                    <span class="size" style="font-size:12px">5.7MB</span>
+                  </div>
+                  <div class="d-flex">
+                    <i class="fa-solid fa-file"></i>
+                    <div class="details d-flex">
+                      <p class="name mb-0">
+                        Document.pdf . <span>preview</span>
+                     </p>
+                     <span class="time">2m ago</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="upload-area my-4">
+                  <div class="float-end">
+                    <span class="size" style="font-size:12px">5.7MB</span>
+                  </div>
+                  <div class="d-flex">
+                    <i class="fa-solid fa-file-image"></i>
+                    <div class="details d-flex">
+                      <p class="name mb-0">
+                        Document.png . <span>preview</span>
+                     </p>
+                     <span class="time">2m ago</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navbar Modal-->
+      <div class="modal" id="navbarModal" tabindex="-1" aria-labelledby="navbar-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="width:300px;">
+          <div class="modal-content">
+            <div class="modal-body align-items-center justify-content-center text-center">
+              <h5 class="text-center mb-2">Select Purchase Order</h5>
+              <div class="col-sm-6 mx-auto my-3">
+                <form class="align-items-center justify-content-center">
+                  <select name="" class="form-control">
+                    <option value="Purchase Order Code" class="">Purchase Order Code</option>
+                    <option value="" class="">PO423547 Supply of Stationaries</option>
+                    <option value="" class="">PO423547 Supply of Printers</option>
+                    <option value="" class="">PO423547 Supply of Laptop</option>
+                  </select>
+                  <div class="my-3">
+                    <a href="laptopSupplyTwo.html" class="btn btn-sm px-3" id="rgbButton">
+                      Continue
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container modals">
+      <div class="modal" id="successModal" tabindex="-1" aria-labelledby="success" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered success-modal" style="width:300px">
+          <div class="modal-content">
+            <div class="modal-body text-center">
+              <img src="assets/img/icons8-checkmark-48-green.png" alt="">
+              <p class="check fw-bold">Congratulation</p>
+              <p class="fw-bold">Purchase order accepted</p>
+              <a href="laptopSupplyTwo.html" class="btn btn-sm" id="rgbButton">
+                Continue
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="commentsModal" tabindex="-1" aria-labelledby="comments-modal">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+          <div class="modal-content">
+              <div class="modal-body d-block">
+              <h5 class="fw-bold mx-2">Comments Feed</h5>
+              <div class="my-4 py-3 mx-2">
+              <div class="row">
+                  <h6 class="user fw-bold">Jane Cooper</h6>
+                  <p class="content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quasi impedit consequuntur veritatis aperiam reprehenderit molestiae magni enim perferendis quae inventore,
+                  quia labore, consectetur hic saepe deserunt possimus esse vero ipsum?
+                  </p>
+                  <p class="date-time mb-0">
+                  02 January, 2022
+                  <span>12:45PM</span>
+                  </p>
+              </div>
+              <hr>
+              <div class="row">
+                  <h6 class="user fw-bold">Devon Lane</h6>
+                  <p class="content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quasi impedit consequuntur veritatis aperiam reprehenderit molestiae magni enim perferendis quae inventore,
+                  quia labore, consectetur hic saepe deserunt possimus esse vero ipsum?
+                  </p>
+                  <p class="date-time mb-0">
+                  02 January, 2022
+                  <span>12:45PM</span>
+                  </p>
+              </div>
+              <hr>
+              <div class="row">
+                  <h6 class="user fw-bold">Eleanor Pena</h6>
+                  <p class="content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quasi impedit consequuntur veritatis aperiam reprehenderit molestiae magni enim perferendis quae inventore,
+                  quia labore, consectetur hic saepe deserunt possimus esse vero ipsum?
+                  </p>
+                  <p class="date-time mb-0">
+                  02 January, 2022
+                  <span>12:45PM</span>
+                  </p>
+              </div>
+              <hr>
+              <div class="row">
+                  <h6 class="user fw-bold">Savannah Nguyen</h6>
+                  <p class="content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quasi impedit consequuntur veritatis aperiam reprehenderit molestiae magni enim perferendis quae inventore,
+                  quia labore, consectetur hic saepe deserunt possimus esse vero ipsum?
+                  </p>
+                  <p class="date-time mb-0">
+                  02 January, 2022
+                  <span>12:45PM</span>
+                  </p>
+              </div>
+              <hr>
+              <div class="text-end pt-2">
+                  <button class="btn shadow" id="rgbButton" type="button" data-bs-dismiss="modal">Back</button>
+              </div>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script>
+      
+    </script>
+  
+  </body>
+</html>
